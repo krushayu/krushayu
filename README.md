@@ -1,14 +1,14 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./banner.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="./banner-light.svg?v=1">
-    <img alt="Aayush — Web Developer Banner" src="./banner.svg?v=1" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="./banner.png?v=1">
+    <source media="(prefers-color-scheme: light)" srcset="./banner-light.png?v=1">
+    <img alt="Aayush — Web Developer Banner" src="./banner.pngt?v=1" width="100%">
   </picture>
 </p>
 
 <p align="center">
-  <img src="./lanyard.svg?v=1" alt="Aayush Interactive Lanyard Badge" width="380">
-</p>
+  <img src="./lanyard-badge.svg?v=1" alt="Aayush Interactive Lanyard Badge" width="380">
+</p> 
 
 <p align="center">
   <a href="https://krushayu.in"><img src="https://img.shields.io/badge/Portfolio-krushayu.in-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
@@ -17,15 +17,12 @@
   <img src="https://komarev.com/ghpvc/?username=krushayu&color=FF4FA3&style=for-the-badge" alt="Profile Views">
 </p>
 
----
 
 <div align="center">
-<p align="left">
+<!-- <p align="left">
   <img src="https://img.shields.io/badge/MERN_Stack-000000?style=for-the-badge&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/MEAN_Stack-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
-</p>
-
----
+</p> -->
 
 ### 📊 Local Dashboard & Analytics
 
