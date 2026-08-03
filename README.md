@@ -23,24 +23,48 @@
 
 ### 🌌 About Me
 
-> **Full-Stack & Creative Web Developer** driven by clean architecture, sleek UIs, and interactive motion design.
-> Transforming ideas into scalable web experiences through modern JavaScript frameworks and responsive designs.
+> **Full-Stack Web Developer** specializing in building modern, scalable web applications and real-time interactive systems.
 
 </div>
 
 ---
 
-### 🧰 Tech Stack & Skills
+### 🧰 Core Skills & Technologies
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+#### 🎨 Frontend Development
+<p align="left">
+  <img src="https://img.shields.io/badge/React.js-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript_(ES6+)-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+</p>
+
+#### ⚙️ Backend & Databases
+<p align="left">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/REST_APIs-0055DA?style=for-the-badge&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+</p>
+
+#### ⚡ Full-Stack & Ecosystems
+<p align="left">
+  <img src="https://img.shields.io/badge/MERN_Stack-000000?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/MEAN_Stack-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+</p>
+
+#### 🚀 Tools & Deployment
+<p align="left">
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" />
+  <img src="https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge&logo=cloudinary&logoColor=white" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 </p>
 
 ---
@@ -53,27 +77,15 @@
 </p>
 
 <p align="center">
-  <img src="./trophies.svg?v=1" alt="Milestones and Trophies" width="97%">
+  <img src="./achievements.svg?v=1" alt="Achievements" width="97%">
 </p>
-
----
-
-### 🚀 Featured Highlights & Work
-
-| Project / Repository | Description | Technologies | Link |
-| :--- | :--- | :--- | :--- |
-| **Personal Portfolio** | Interactive web experience featuring full-stack projects, responsive design, and motion UI. | React, JavaScript, CSS3 | [Visit Website](https://krushayu.in) |
-| **Web Apps & Systems** | High-performance client-side and server-side web applications with clean architecture. | React, Node.js, SQL | [View Repositories](https://github.com/krushayu) |
 
 ---
 
 ### 🐍 Contribution Activity Graph
 
 <p align="center">
-  <img
-    src="https://raw.githubusercontent.com/krushayu/krushayu/output/github-contribution-grid-snake.svg?v=1"
-    alt="GitHub Contribution Snake"
-  />
+  <img src="https://raw.githubusercontent.com/krushayu/krushayu/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Grid" width="100%" />
 </p>
 
 ---
