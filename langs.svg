@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150A26"/>
+      <stop offset="100%" stop-color="#090611"/>
+    </linearGradient>
+    <style>
+      @keyframes fillBar { from { width: 0px; } }
+      .bar-fill { animation: fillBar 1.8s ease-out forwards; }
+    </style>
+  </defs>
+
+  <rect width="450" height="220" rx="16" fill="url(#cardBg2)" stroke="rgba(139,92,246,0.3)" stroke-width="1.5"/>
+
+  <text x="30" y="40" fill="#F8F7FF" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="bold">Core Technologies</text>
+  <text x="30" y="58" fill="#B8AFC7" font-family="'Segoe UI', sans-serif" font-size="12">Verified Skills &amp; Stack</text>
+
+  <g transform="translate(30, 85)" font-family="'Segoe UI', sans-serif" font-size="13">
+    <!-- JS / React -->
+    <text x="0" y="0" fill="#F8F7FF" font-weight="600">JavaScript / React</text>
+    <rect x="0" y="10" width="390" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <rect class="bar-fill" x="0" y="10" width="340" height="8" rx="4" fill="#FF4FA3"/>
+
+    <!-- HTML / CSS -->
+    <text x="0" y="38" fill="#F8F7FF" font-weight="600">HTML5 &amp; CSS3</text>
+    <rect x="0" y="48" width="390" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <rect class="bar-fill" x="0" y="48" width="310" height="8" rx="4" fill="#D946EF"/>
+
+    <!-- Node.js / SQL -->
+    <text x="0" y="76" fill="#F8F7FF" font-weight="600">Node.js &amp; SQL</text>
+    <rect x="0" y="86" width="390" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+    <rect class="bar-fill" x="0" y="86" width="260" height="8" rx="4" fill="#8B5CF6"/>
+  </g>
+</svg>

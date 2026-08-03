@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150A26"/>
+      <stop offset="100%" stop-color="#090611"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4FA3"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <style>
+      @keyframes ringProgress {
+        from { stroke-dashoffset: 280; }
+        to { stroke-dashoffset: 40; }
+      }
+      .progress-ring {
+        stroke-dasharray: 280;
+        animation: ringProgress 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+    </style>
+  </defs>
+
+  <rect width="450" height="220" rx="16" fill="url(#cardGrad)" stroke="rgba(255,79,163,0.3)" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="30" y="40" fill="#F8F7FF" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="bold">Developer Overview</text>
+  <text x="30" y="58" fill="#B8AFC7" font-family="'Segoe UI', sans-serif" font-size="12">Verified GitHub Activity</text>
+
+  <!-- Rank Ring Circle -->
+  <g transform="translate(80, 135)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8"/>
+    <circle cx="0" cy="0" r="45" fill="none" stroke="url(#ringGrad)" stroke-width="8" stroke-linecap="round" class="progress-ring" transform="rotate(-90)"/>
+    <text x="0" y="6" fill="#FF4FA3" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="900" text-anchor="middle">A+</text>
+  </g>
+
+  <!-- Stat Rows -->
+  <g transform="translate(170, 90)" font-family="'Segoe UI', sans-serif">
+    <text x="0" y="0" fill="#B8AFC7" font-size="14">Primary Role:</text>
+    <text x="210" y="0" fill="#F8F7FF" font-size="14" font-weight="bold" text-anchor="end">Web Developer</text>
+
+    <text x="0" y="30" fill="#B8AFC7" font-size="14">Identity / Handle:</text>
+    <text x="210" y="30" fill="#D946EF" font-size="14" font-weight="bold" text-anchor="end">@krushayu</text>
+
+    <text x="0" y="60" fill="#B8AFC7" font-size="14">Portfolio Status:</text>
+    <text x="210" y="60" fill="#27C93F" font-size="14" font-weight="bold" text-anchor="end">Active (krushayu.in)</text>
+
+    <text x="0" y="90" fill="#B8AFC7" font-size="14">Code Quality Rate:</text>
+    <text x="210" y="90" fill="#8B5CF6" font-size="14" font-weight="bold" text-anchor="end">99.8%</text>
+  </g>
+</svg>

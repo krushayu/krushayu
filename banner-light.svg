@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 740" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F5F3FF"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D946EF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#7C3AED" flood-opacity="0.12"/>
+    </filter>
+
+    <clipPath id="bannerLightClip">
+      <rect width="1280" height="740" rx="24" ry="24"/>
+    </clipPath>
+
+    <style>
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes scanSweep { 0% { transform: translateY(-50px); } 100% { transform: translateY(800px); } }
+      .terminal-cursor-light { animation: blink 0.8s infinite; fill: #D946EF; }
+      .scanner-line-light { animation: scanSweep 3.5s linear infinite; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#bannerLightClip)">
+    <rect width="1280" height="740" fill="url(#bgLight)"/>
+
+    <!-- Subtle Grid Overlay -->
+    <path d="M 0,100 L 1280,100 M 0,200 L 1280,200 M 0,300 L 1280,300 M 0,400 L 1280,400 M 0,500 L 1280,500 M 0,600 L 1280,600" stroke="#7C3AED" stroke-opacity="0.05" stroke-width="1"/>
+    
+    <!-- Main Panel -->
+    <rect x="60" y="50" width="700" height="640" rx="16" fill="#FFFFFF" filter="url(#shadow)" stroke="rgba(124,58,237,0.15)" stroke-width="1"/>
+    <rect x="60" y="50" width="700" height="40" rx="16" fill="#F3E8FF"/>
+    <circle cx="90" cy="70" r="6" fill="#FF5F56"/>
+    <circle cx="110" cy="70" r="6" fill="#FFBD2E"/>
+    <circle cx="130" cy="70" r="6" fill="#27C93F"/>
+    <text x="160" y="75" fill="#6B21A8" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600">user@krushayu-desktop: ~/portfolio</text>
+
+    <!-- Terminal Prompt -->
+    <text x="90" y="130" fill="#D946EF" font-family="'Courier New', monospace" font-size="18" font-weight="bold">user@dev:~$ <tspan fill="#1E1B4B">cat README.md</tspan></text>
+    <rect x="360" y="114" width="10" height="20" class="terminal-cursor-light" />
+
+    <!-- Name Header -->
+    <g transform="translate(90, 165)">
+      <path d="M 15 65 L 45 10 L 75 65 M 27 45 L 63 45" stroke="url(#primaryGrad)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M 90 35 Q 110 25 120 45 Q 120 65 95 65 L 125 65" stroke="url(#primaryGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M 140 25 L 155 55 L 170 25 M 155 55 L 155 75" stroke="url(#primaryGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M 185 25 L 185 55 Q 185 65 205 65 Q 225 65 225 55 L 225 25" stroke="url(#primaryGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M 240 60 Q 255 68 270 60 Q 270 45 240 45 Q 240 25 270 25" stroke="url(#primaryGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <path d="M 290 10 L 290 65 M 290 40 L 320 40 M 320 10 L 320 65" stroke="url(#primaryGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Subtitle Role -->
+    <text x="90" y="270" fill="#7C3AED" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="700">&gt; Web Developer <tspan fill="#4C1D95">| Interactive Systems</tspan></text>
+
+    <!-- Tagline Box -->
+    <rect x="90" y="300" width="640" height="50" rx="10" fill="#F3E8FF" stroke="rgba(124,58,237,0.2)" stroke-width="1"/>
+    <text x="110" y="332" fill="#3B0764" font-family="'Segoe UI', sans-serif" font-size="15" font-style="italic">
+      "Turning ideas into interfaces, and code into experiences."
+    </text>
+
+    <!-- Skill Chips -->
+    <g transform="translate(90, 380)">
+      <rect x="0" y="0" width="90" height="32" rx="16" fill="#FCE7F3" stroke="#D946EF" stroke-width="1"/>
+      <text x="45" y="21" fill="#831843" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">React</text>
+
+      <rect x="105" y="0" width="110" height="32" rx="16" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1"/>
+      <text x="160" y="21" fill="#4C1D95" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">JavaScript</text>
+
+      <rect x="230" y="0" width="100" height="32" rx="16" fill="#F3E8FF" stroke="#A855F7" stroke-width="1"/>
+      <text x="280" y="21" fill="#581C87" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">Node.js</text>
+    </g>
+
+    <!-- Code Block -->
+    <g transform="translate(90, 435)">
+      <rect x="0" y="0" width="640" height="175" rx="12" fill="#1E1B4B"/>
+      <text x="25" y="35" fill="#F472B6" font-family="'Courier New', monospace" font-size="14">function <tspan fill="#38BDF8">buildDreams</tspan>() {</text>
+      <text x="50" y="65" fill="#E2E8F0" font-family="'Courier New', monospace" font-size="14">const <tspan fill="#A78BFA">portfolio</tspan> = <tspan fill="#34D399">"https://krushayu.in"</tspan>;</text>
+      <text x="50" y="95" fill="#E2E8F0" font-family="'Courier New', monospace" font-size="14">return <tspan fill="#F472B6">&lt;Aayush</tspan> <tspan fill="#F8F7FF">status</tspan>=<tspan fill="#34D399">"building"</tspan> <tspan fill="#F472B6">/&gt;</tspan>;</text>
+      <text x="25" y="125" fill="#F472B6" font-family="'Courier New', monospace" font-size="14">}</text>
+    </g>
+
+    <text x="90" y="660" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="900" fill="#7C3AED" letter-spacing="4">KEEP CODING • KEEP GROWING</text>
+
+    <!-- Character Side Card -->
+    <rect x="820" y="110" width="400" height="570" rx="20" fill="#FFFFFF" stroke="url(#primaryGrad)" stroke-width="2" filter="url(#shadow)"/>
+    <image x="830" y="120" width="380" height="550" preserveAspectRatio="xMidYMid meet" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="/>
+    <rect class="scanner-line-light" x="820" y="110" width="400" height="6" fill="#D946EF" opacity="0.6"/>
+  </g>
+</svg>

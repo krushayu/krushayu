@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 740" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090611"/>
+      <stop offset="50%" stop-color="#150a26"/>
+      <stop offset="100%" stop-color="#0d0715"/>
+    </linearGradient>
+
+    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4FA3"/>
+      <stop offset="50%" stop-color="#D946EF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <radialGradient id="orb1" cx="30%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FF2D95" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#090611" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orb2" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#090611" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="bannerClip">
+      <rect width="1280" height="740" rx="24" ry="24"/>
+    </clipPath>
+
+    <clipPath id="holoClip">
+      <path d="M 850,110 L 1190,110 C 1210,110 1220,120 1220,140 L 1220,650 C 1220,670 1210,680 1190,680 L 850,680 C 830,680 820,670 820,650 L 820,140 C 820,120 830,110 850,110 Z" />
+    </clipPath>
+
+    <style>
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes typeText { from { width: 0; } to { width: 320px; } }
+      @keyframes neonFlicker {
+        0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px #FF4FA3); }
+        50% { opacity: 0.85; filter: drop-shadow(0 0 4px #FF4FA3); }
+        52% { opacity: 0.3; filter: none; }
+        54% { opacity: 1; filter: drop-shadow(0 0 14px #D946EF); }
+      }
+      @keyframes scanSweep {
+        0% { transform: translateY(-50px); }
+        100% { transform: translateY(800px); }
+      }
+      @keyframes floatParticle {
+        0% { transform: translateY(0px) scale(1); opacity: 0.2; }
+        50% { opacity: 0.8; }
+        100% { transform: translateY(-120px) scale(1.2); opacity: 0; }
+      }
+      @keyframes charReveal {
+        0% { clip-path: inset(0 0 100% 0); }
+        100% { clip-path: inset(0 0 0% 0); }
+      }
+      .terminal-cursor { animation: blink 0.8s infinite; fill: #FF4FA3; }
+      .neon-text { animation: neonFlicker 4s infinite alternate; font-family: 'Courier New', monospace; }
+      .scanner-line { animation: scanSweep 3.5s linear infinite; }
+      .particle { animation: floatParticle 6s ease-in-out infinite; }
+      .char-img { animation: charReveal 2.5s cubic-bezier(0.77, 0, 0.175, 1) forwards; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#bannerClip)">
+    <!-- Base Background -->
+    <rect width="1280" height="740" fill="url(#bg)"/>
+    <rect width="1280" height="740" fill="url(#orb1)"/>
+    <rect width="1280" height="740" fill="url(#orb2)"/>
+
+    <!-- Grid lines overlay -->
+    <path d="M 0,100 L 1280,100 M 0,200 L 1280,200 M 0,300 L 1280,300 M 0,400 L 1280,400 M 0,500 L 1280,500 M 0,600 L 1280,600" stroke="#8B5CF6" stroke-opacity="0.07" stroke-width="1"/>
+    <path d="M 200,0 L 200,740 M 400,0 L 400,740 M 600,0 L 600,740 M 800,0 L 800,740 M 1000,0 L 1000,740" stroke="#8B5CF6" stroke-opacity="0.07" stroke-width="1"/>
+
+    <!-- Animated Particles -->
+    <circle cx="150" cy="500" r="3" fill="#FF4FA3" class="particle" style="animation-delay: 0s;"/>
+    <circle cx="350" cy="620" r="2" fill="#D946EF" class="particle" style="animation-delay: 1.5s;"/>
+    <circle cx="650" cy="450" r="4" fill="#8B5CF6" class="particle" style="animation-delay: 3s;"/>
+    <circle cx="950" cy="580" r="2.5" fill="#FF2D95" class="particle" style="animation-delay: 0.8s;"/>
+
+    <!-- Terminal Window Glass Panel -->
+    <rect x="60" y="50" width="700" height="640" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+    <rect x="60" y="50" width="700" height="40" rx="16" fill="rgba(255,255,255,0.05)"/>
+    <circle cx="90" cy="70" r="6" fill="#FF5F56"/>
+    <circle cx="110" cy="70" r="6" fill="#FFBD2E"/>
+    <circle cx="130" cy="70" r="6" fill="#27C93F"/>
+    <text x="160" y="75" fill="#B8AFC7" font-family="'Segoe UI', sans-serif" font-size="13" opacity="0.8">user@krushayu-desktop: ~/portfolio</text>
+
+    <!-- Terminal Typing Command -->
+    <text x="90" y="130" fill="#FF4FA3" font-family="'Courier New', monospace" font-size="18" font-weight="bold">user@dev:~$ <tspan fill="#F8F7FF">cat README.md</tspan></text>
+    <rect x="360" y="114" width="10" height="20" class="terminal-cursor" />
+
+    <!-- Vectorized Name Heading: Aayush -->
+    <g transform="translate(90, 165)">
+      <!-- Smooth converted vector path representations for "Aayush" -->
+      <path d="M 15 65 L 45 10 L 75 65 M 27 45 L 63 45" stroke="url(#neonGlow)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#glow)"/>
+      <path d="M 90 35 Q 110 25 120 45 Q 120 65 95 65 L 125 65" stroke="url(#neonGlow)" stroke-width="7" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+      <path d="M 140 25 L 155 55 L 170 25 M 155 55 L 155 75" stroke="url(#neonGlow)" stroke-width="7" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+      <path d="M 185 25 L 185 55 Q 185 65 205 65 Q 225 65 225 55 L 225 25" stroke="url(#neonGlow)" stroke-width="7" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+      <path d="M 240 60 Q 255 68 270 60 Q 270 45 240 45 Q 240 25 270 25" stroke="url(#neonGlow)" stroke-width="7" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+      <path d="M 290 10 L 290 65 M 290 40 L 320 40 M 320 10 L 320 65" stroke="url(#neonGlow)" stroke-width="7" stroke-linecap="round" fill="none" filter="url(#glow)"/>
+    </g>
+
+    <!-- Role Titles -->
+    <g transform="translate(90, 270)">
+      <text x="0" y="0" fill="#D946EF" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="600" letter-spacing="1">
+        &gt; Web Developer <tspan fill="#B8AFC7">| Full-Stack Creator</tspan>
+      </text>
+    </g>
+
+    <!-- Tagline Card -->
+    <rect x="90" y="300" width="640" height="50" rx="10" fill="rgba(36,16,58,0.5)" stroke="rgba(217,70,239,0.3)" stroke-width="1"/>
+    <text x="110" y="332" fill="#F8F7FF" font-family="'Segoe UI', sans-serif" font-size="15" font-style="italic">
+      "Turning complex ideas into seamless digital experiences through clean code."
+    </text>
+
+    <!-- Tech Pills -->
+    <g transform="translate(90, 380)">
+      <rect x="0" y="0" width="90" height="32" rx="16" fill="rgba(255,79,163,0.15)" stroke="#FF4FA3" stroke-width="1"/>
+      <text x="45" y="21" fill="#F8F7FF" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">React</text>
+
+      <rect x="105" y="0" width="110" height="32" rx="16" fill="rgba(139,92,246,0.15)" stroke="#8B5CF6" stroke-width="1"/>
+      <text x="160" y="21" fill="#F8F7FF" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">JavaScript</text>
+
+      <rect x="230" y="0" width="100" height="32" rx="16" fill="rgba(217,70,239,0.15)" stroke="#D946EF" stroke-width="1"/>
+      <text x="280" y="21" fill="#F8F7FF" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">Node.js</text>
+
+      <rect x="345" y="0" width="80" height="32" rx="16" fill="rgba(255,45,149,0.15)" stroke="#FF2D95" stroke-width="1"/>
+      <text x="385" y="21" fill="#F8F7FF" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">SQL</text>
+
+      <rect x="440" y="0" width="80" height="32" rx="16" fill="rgba(124,58,237,0.15)" stroke="#7C3AED" stroke-width="1"/>
+      <text x="480" y="21" fill="#F8F7FF" font-family="sans-serif" font-size="13" text-anchor="middle" font-weight="bold">HTML/CSS</text>
+    </g>
+
+    <!-- Code Editor Panel -->
+    <g transform="translate(90, 435)">
+      <rect x="0" y="0" width="640" height="175" rx="12" fill="#0D0715" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="25" y="35" fill="#D946EF" font-family="'Courier New', monospace" font-size="14">function <tspan fill="#FF4FA3">buildSystem</tspan>() {</text>
+      <text x="50" y="65" fill="#B8AFC7" font-family="'Courier New', monospace" font-size="14">const <tspan fill="#8B5CF6">vision</tspan> = <tspan fill="#27C93F">"Clean Code &amp; Motion UI"</tspan>;</text>
+      <text x="50" y="95" fill="#B8AFC7" font-family="'Courier New', monospace" font-size="14">return <tspan fill="#FF2D95">&lt;Developer</tspan> <tspan fill="#F8F7FF">mode</tspan>=<tspan fill="#27C93F">"creative"</tspan> <tspan fill="#FF2D95">/&gt;</tspan>;</text>
+      <text x="25" y="125" fill="#D946EF" font-family="'Courier New', monospace" font-size="14">}</text>
+      <text x="25" y="155" fill="#B8AFC7" font-family="'Courier New', monospace" font-size="13" opacity="0.6">// https://krushayu.in</text>
+    </g>
+
+    <!-- Neon Sign Element -->
+    <g transform="translate(90, 630)">
+      <text x="0" y="30" class="neon-text" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="900" fill="#FF4FA3" letter-spacing="4">KEEP CODING • KEEP GROWING</text>
+    </g>
+
+    <!-- Character Glass Frame Container -->
+    <g clip-path="url(#holoClip)">
+      <rect x="820" y="110" width="400" height="570" rx="20" fill="rgba(36,16,58,0.4)" stroke="url(#neonGlow)" stroke-width="2"/>
+      
+      <!-- Anime Character (Embedded Processed Image) -->
+      <image class="char-img" x="830" y="120" width="380" height="550" preserveAspectRatio="xMidYMid meet" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="/>
+
+      <!-- Holographic Sweep Bar -->
+      <rect class="scanner-line" x="800" y="0" width="440" height="8" fill="url(#neonGlow)" filter="url(#glow)" opacity="0.8"/>
+    </g>
+  </g>
+</svg>

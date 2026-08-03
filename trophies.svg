@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 140" width="100%" height="100%">
+  <defs>
+    <linearGradient id="trophyBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150A26"/>
+      <stop offset="100%" stop-color="#090611"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="140" rx="16" fill="url(#trophyBg)" stroke="rgba(255,79,163,0.3)" stroke-width="1.5"/>
+
+  <g transform="translate(35, 30)" font-family="'Segoe UI', sans-serif">
+    <!-- Cell 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="260" height="80" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,79,163,0.2)" stroke-width="1"/>
+      <text x="20" y="35" fill="#FF4FA3" font-size="24">🚀</text>
+      <text x="60" y="33" fill="#F8F7FF" font-size="14" font-weight="bold">Web Innovation</text>
+      <text x="60" y="52" fill="#B8AFC7" font-size="12">Portfolio &amp; Interactive Apps</text>
+    </g>
+
+    <!-- Cell 2 -->
+    <g transform="translate(285, 0)">
+      <rect width="260" height="80" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(217,70,239,0.2)" stroke-width="1"/>
+      <text x="20" y="35" fill="#D946EF" font-size="24">⚡</text>
+      <text x="60" y="33" fill="#F8F7FF" font-size="14" font-weight="bold">Full-Stack Capability</text>
+      <text x="60" y="52" fill="#B8AFC7" font-size="12">Frontend + Backend Integration</text>
+    </g>
+
+    <!-- Cell 3 -->
+    <g transform="translate(570, 0)">
+      <rect width="260" height="80" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(139,92,246,0.2)" stroke-width="1"/>
+      <text x="20" y="35" fill="#8B5CF6" font-size="24">💎</text>
+      <text x="60" y="33" fill="#F8F7FF" font-size="14" font-weight="bold">Clean Code</text>
+      <text x="60" y="52" fill="#B8AFC7" font-size="12">Modern UI / UX Architecture</text>
+    </g>
+  </g>
+</svg>
