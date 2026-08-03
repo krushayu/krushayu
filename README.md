@@ -70,7 +70,10 @@
 ### 🐍 Contribution Activity Graph
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/krushayu/krushayu/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Grid" width="100%" />
+  <img
+    src="https://raw.githubusercontent.com/krushayu/krushayu/output/github-contribution-grid-snake.svg?v=1"
+    alt="GitHub Contribution Snake"
+  />
 </p>
 
 ---
