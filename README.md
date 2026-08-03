@@ -18,25 +18,6 @@
 </p>
 
 
-<div align="center">
-<!-- <p align="left">
-  <img src="https://img.shields.io/badge/MERN_Stack-000000?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/MEAN_Stack-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
-</p> -->
-
-### 📊 Local Dashboard & Analytics
-
-<p align="center">
-  <img src="./stats.svg?v=1" alt="Developer Statistics" width="48%">
-  <img src="./langs.svg?v=1" alt="Technology Stack Distribution" width="48%">
-</p>
-
-<p align="center">
-  <img src="./achievements.svg?v=1" alt="Achievements" width="97%">
-</p>
-
----
-
 ### 🐍 Contribution Activity Graph
 
 <p align="center">
@@ -44,7 +25,3 @@
 </p>
 
 ---
-
-<p align="center">
-  <sub>⚡ Designed with Neon & Anime aesthetic for Aayush (@krushayu)</sub>
-</p>
